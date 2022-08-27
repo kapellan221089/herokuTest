@@ -17,8 +17,8 @@ const posts = [
 
 io.on('connection', socket => {
   console.log('start socket')
-  /*socket.emit('loadPosts', posts)
-  socket.on('createMessage', data => {
+  socket.emit('loadPosts', posts)
+  /*socket.on('createMessage', data => {
     for(let i = 0; i<posts.length;i++){
       if (data.id == posts[i].id){
         posts.splice(i,1)
