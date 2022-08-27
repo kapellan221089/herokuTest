@@ -11,7 +11,7 @@ const PORT = process.env.PORT
 
 builder.build()
   .then(() => {
-  // Рендерить каждый маршрут с Nuxt.js
+  // Рендерить каждый маршрут сNuxt.js
     app.use(nuxt.render)
     // Запустить сервер
     server.listen(PORT||8080, ()=>{
