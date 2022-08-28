@@ -7,6 +7,7 @@ export default function({ store }) {
   Vue.use(
     new VueSocketIO({
       debug: false,
+      allowEIO3: true,
       connection:'https://mighty-taiga-11038.herokuapp.com',
       vuex: {
         store,

@@ -8,7 +8,7 @@ const builder = new Builder(nuxt);
 
 app.use(morgan('dev'));
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
 builder.build()
   .then(() => {
