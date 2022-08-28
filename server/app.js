@@ -11,6 +11,13 @@ io.on('connection', socket => {
   console.log('start socket')
   console.log('start socket')
   console.log('start socket')
+  socket.on('join', data=>{
+    console.log(data)
+    console.log(data)
+    console.log(data)
+    console.log(data)
+    console.log(data)
+  })
 });
 
 module.exports = {
