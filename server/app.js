@@ -1,6 +1,6 @@
 const app = require('express')();
 const server = require('http').createServer(app);
-const io = require('socket.io',{allowEIO3: true})(server);
+const io = require('socket.io')(server, {allowEIO3: true});
 
 
 
